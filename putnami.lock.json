@@ -58,6 +58,14 @@
     }
   },
   "extensions": {
+    "@putnami/cloud": {
+      "version": "0.4.1-20261115101940-aa1341ca",
+      "integrities": {
+        "darwin/arm64": "844dda07730d73177e8f63fc9823ae30fb23124dd221f13ebcac54ef0557678d"
+      },
+      "manifestHash": "af37443097779d3b567709f8dce9a554a4169b5e7789ea994f182979f847f0ab",
+      "source": "https://put.putnami.dev/putnami/cloud/download?channel=0.4.1-20261115101940-aa1341ca"
+    },
     "@putnami/dev": {
       "version": "0.5.0-20261115101940-aa1341ca",
       "integrities": {

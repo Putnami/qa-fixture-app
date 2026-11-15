@@ -2,7 +2,8 @@
   "$schema": "https://putnami.dev/schemas/putnami-workspace.json",
   "name": "qa-fixture-app",
   "extensions": [
-    "@putnami/go"
+    "@putnami/go",
+    "@putnami/cloud"
   ],
   "templates": [
     "go-server"
@@ -10,5 +11,12 @@
   "includes": [
     "libs/greeting",
     "services/greeter"
-  ]
+  ],
+  "options": {
+    "@putnami/cloud": {
+      "workspace": {
+        "workspace_id": "4e631e8c-a534-4623-882c-e4bd4248e1d1"
+      }
+    }
+  }
 }
