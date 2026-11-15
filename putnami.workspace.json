@@ -1,0 +1,14 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-workspace.json",
+  "name": "qa-fixture-app",
+  "extensions": [
+    "@putnami/go"
+  ],
+  "templates": [
+    "go-server"
+  ],
+  "includes": [
+    "libs/greeting",
+    "services/greeter"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "server": {
+      "additionalProperties": false,
+      "properties": {
+        "port": {
+          "default": 3000,
+          "type": "integer",
+          "x-env": "PORT"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "server"
+  ],
+  "title": "greeter config",
+  "type": "object"
+}

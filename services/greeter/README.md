@@ -1,0 +1,25 @@
+# greeter
+
+A Go HTTP server on the Putnami framework, created from Putnami's `go-server`
+template.
+
+## Endpoints
+
+| Path | Answers |
+|------|---------|
+| `GET /` | `{"Hello": "World"}` |
+| `GET /livez`, `/healthz`, `/readyz`, `/version` | The operational endpoints of `go.putnami.dev/platform`; deployment probes and `putnami qualify` wait on `/readyz` |
+| `GET /_/health` | The single-endpoint liveness probe of `go.putnami.dev/http` |
+
+## Commands
+
+```bash
+putnami serve greeter            # run it locally, reloading on change
+putnami lint,test,build greeter  # check it the way CI does
+```
+
+## Documentation
+
+This README is the project's entry point. Put longer pages under `doc/` and
+link them from here: `putnami lint` fails on a relative link or an anchor that
+does not resolve. Putnami itself is documented at <https://putnami.dev/docs>.

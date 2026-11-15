@@ -1,0 +1,146 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-capabilities-v2.json",
+  "protocolVersion": 2,
+  "project": "greeter",
+  "lifecycleHooks": [
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "starter",
+        "key": "health"
+      },
+      "name": "health",
+      "phase": "starter",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/http",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "health.go",
+          "symbol": "go.putnami.dev/http.(*HealthPlugin).Start"
+        }
+      }
+    },
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "starter",
+        "key": "http"
+      },
+      "name": "http",
+      "phase": "starter",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/http",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "server.go",
+          "symbol": "go.putnami.dev/http.(*ServerPlugin).Start"
+        }
+      }
+    },
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "starter",
+        "key": "platform"
+      },
+      "name": "platform",
+      "phase": "starter",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/platform",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "plugin.go",
+          "symbol": "go.putnami.dev/platform.(*Plugin).Start"
+        }
+      }
+    },
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "stopper",
+        "key": "health"
+      },
+      "name": "health",
+      "phase": "stopper",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/http",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "health.go",
+          "symbol": "go.putnami.dev/http.(*HealthPlugin).Stop"
+        }
+      }
+    },
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "stopper",
+        "key": "http"
+      },
+      "name": "http",
+      "phase": "stopper",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/http",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "server.go",
+          "symbol": "go.putnami.dev/http.(*ServerPlugin).Stop"
+        }
+      }
+    },
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "lifecycle",
+        "subkind": "stopper",
+        "key": "platform"
+      },
+      "name": "platform",
+      "phase": "stopper",
+      "provenance": {
+        "project": "greeter",
+        "package": "go.putnami.dev/platform",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "package",
+          "path": "plugin.go",
+          "symbol": "go.putnami.dev/platform.(*Plugin).Stop"
+        }
+      }
+    }
+  ],
+  "packages": [
+    {
+      "identity": {
+        "ownerProject": "greeter",
+        "kind": "package",
+        "key": "greeter"
+      },
+      "package": "greeter",
+      "provenance": {
+        "project": "greeter",
+        "package": "greeter",
+        "sourceKind": "framework",
+        "declaration": {
+          "root": "project",
+          "path": "putnami.json"
+        }
+      }
+    }
+  ]
+}

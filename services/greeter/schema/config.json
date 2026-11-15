@@ -1,0 +1,18 @@
+{
+  "appName": "greeter",
+  "version": "0.0.0",
+  "schemaHash": "sha256:1a3a56069c5e7541",
+  "configs": [
+    {
+      "path": "server",
+      "fields": [
+        {
+          "name": "port",
+          "type": "int",
+          "default": "3000",
+          "env": "PORT"
+        }
+      ]
+    }
+  ]
+}

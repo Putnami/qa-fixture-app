@@ -1,0 +1,9 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-project.json",
+  "name": "greeter",
+  "type": "application",
+  "main": "main.go",
+  "extensions": [
+    "@putnami/go"
+  ]
+}
