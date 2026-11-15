@@ -32,6 +32,20 @@
     },
     {
       "match": "template",
+      "path": "/farewell/{name}",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "publicEdge": true,
+      "provenance": {
+        "project": "server",
+        "package": "go.putnami.dev/http",
+        "sourceKind": "manual"
+      }
+    },
+    {
+      "match": "template",
       "path": "/greet/{name}",
       "methods": [
         "GET",
@@ -101,5 +115,5 @@
       }
     }
   ],
-  "digest": "sha256:bdbc4dae3059f7093649a8ca2ab723a2f6396af909c17a56e5141e4d8d8ae286"
+  "digest": "sha256:b5a4a0fe300df9d8dfd5aa57b15c7646366beb3b5d7d311f21ee3e962a5f50c3"
 }

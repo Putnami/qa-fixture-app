@@ -48,6 +48,7 @@ func newApp(cfg ServerConfig) (*app.Application, *http.ServerPlugin) {
 		return http.JSON(map[string]string{"Hello": "World"})
 	})
 	server.GET("/greet/{name}", greetHandler)
+	server.GET("/farewell/{name}", farewellHandler)
 
 	a := app.New("server")
 	a.Use(server)
@@ -59,7 +60,17 @@ func newApp(cfg ServerConfig) (*app.Application, *http.ServerPlugin) {
 // greetHandler answers GET /greet/{name} with {"message": "Hello, <name>!"},
 // or 400 when the name is empty or too long.
 func greetHandler(ctx *http.Context) *http.Response {
-	message, err := greeting.Greet(ctx.Param("name"))
+	return messageResponse(greeting.Greet(ctx.Param("name")))
+}
+
+// farewellHandler answers GET /farewell/{name} with
+// {"message": "Goodbye, <name>!"}, or 400 as greetHandler does.
+func farewellHandler(ctx *http.Context) *http.Response {
+	return messageResponse(greeting.Farewell(ctx.Param("name")))
+}
+
+// messageResponse turns a greeting result into the JSON answer.
+func messageResponse(message string, err error) *http.Response {
 	if errors.Is(err, greeting.ErrEmptyName) || errors.Is(err, greeting.ErrNameTooLong) {
 		return http.JSONStatus(400, map[string]string{"error": err.Error()})
 	}

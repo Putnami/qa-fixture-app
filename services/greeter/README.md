@@ -9,6 +9,7 @@ template.
 |------|---------|
 | `GET /` | `{"Hello": "World"}` |
 | `GET /greet/{name}` | `{"message": "Hello, <name>!"}`, or 400 for a blank name or a name over 64 characters |
+| `GET /farewell/{name}` | `{"message": "Goodbye, <name>!"}`, with the same 400 answers |
 | `GET /livez`, `/healthz`, `/readyz`, `/version` | The operational endpoints of `go.putnami.dev/platform`; deployment probes and `putnami qualify` wait on `/readyz` |
 | `GET /_/health` | The single-endpoint liveness probe of `go.putnami.dev/http` |
 

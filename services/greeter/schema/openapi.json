@@ -15,6 +15,26 @@
         }
       }
     },
+    "/farewell/{name}": {
+      "get": {
+        "operationId": "getFarewell_Name",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    },
     "/greet/{name}": {
       "get": {
         "operationId": "getGreet_Name",

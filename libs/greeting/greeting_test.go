@@ -33,3 +33,13 @@ func TestGreet(t *testing.T) {
 		})
 	}
 }
+
+func TestFarewell(t *testing.T) {
+	got, err := Farewell("  Ada ")
+	if err != nil || got != "Goodbye, Ada!" {
+		t.Fatalf("Farewell(%q) = %q, %v, want %q, nil", "  Ada ", got, err, "Goodbye, Ada!")
+	}
+	if _, err := Farewell(""); !errors.Is(err, ErrEmptyName) {
+		t.Fatalf("Farewell(\"\") error = %v, want %v", err, ErrEmptyName)
+	}
+}

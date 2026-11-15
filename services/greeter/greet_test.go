@@ -17,6 +17,8 @@ func TestGreetRoute(t *testing.T) {
 		wantValue  string
 	}{
 		{path: "/greet/Ada", wantStatus: http.StatusOK, wantKey: "message", wantValue: "Hello, Ada!"},
+		{path: "/farewell/Ada", wantStatus: http.StatusOK, wantKey: "message", wantValue: "Goodbye, Ada!"},
+		{path: "/farewell/%20", wantStatus: http.StatusBadRequest, wantKey: "error", wantValue: "greeting: name is empty"},
 		{path: "/greet/%20%20", wantStatus: http.StatusBadRequest, wantKey: "error", wantValue: "greeting: name is empty"},
 		{path: "/greet/" + strings.Repeat("a", 65), wantStatus: http.StatusBadRequest, wantKey: "error", wantValue: "greeting: name is too long"},
 	}

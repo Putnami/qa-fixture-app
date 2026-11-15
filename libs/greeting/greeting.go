@@ -27,3 +27,13 @@ func Greet(name string) (string, error) {
 	}
 	return "Hello, " + trimmed + "!", nil
 }
+
+// Farewell returns "Goodbye, <name>!" for a trimmed, non-empty name. It
+// accepts the same names as Greet.
+func Farewell(name string) (string, error) {
+	hello, err := Greet(name)
+	if err != nil {
+		return "", err
+	}
+	return "Goodbye, " + hello[len("Hello, "):], nil
+}
