@@ -1,0 +1,21 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-feature.json",
+  "protocolVersion": 2,
+  "namespace": "greeter",
+  "feature": {
+    "id": "greeter/greeting",
+    "type": "feature",
+    "name": "Greeting",
+    "outcome": "A person reads a greeting that names them",
+    "owner": "greeter",
+    "target": "coded",
+    "requirements": [
+      {
+        "id": "greets-by-name",
+        "stage": "coded",
+        "evidenceKinds": ["attestation"],
+        "verification": { "kind": "acceptance", "checks": ["greeter-greeting"] }
+      }
+    ]
+  }
+}

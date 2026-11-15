@@ -1,0 +1,9 @@
+node_modules
+dist
+.putnami
+coverage
+.gen
+.generated
+.DS_Store
+.env.local.yaml
+.env.prod.yaml

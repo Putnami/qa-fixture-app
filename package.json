@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@biomejs/biome": "2.5.3",
+    "@types/bun": "^1.4.0",
+    "typescript": "^6.0.2"
+  },
+  "name": "qa-fixture-app",
+  "packageManager": "bun@1.4.0",
+  "private": true,
+  "workspaces": [
+    "libs/greeter"
+  ]
+}

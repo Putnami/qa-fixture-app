@@ -1,0 +1,13 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-spec.json",
+  "protocolVersion": 1,
+  "feature": "greeter/greeting",
+  "outcomes": ["A person reads a greeting that names them"],
+  "nonGoals": ["Greetings in another language than English"],
+  "requirements": [
+    {
+      "id": "greets-by-name",
+      "text": "The greeting names the person, and a blank name gives a greeting that names nobody."
+    }
+  ]
+}
