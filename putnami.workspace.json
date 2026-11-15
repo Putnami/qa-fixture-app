@@ -1,0 +1,19 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-workspace.json",
+  "name": "qa-fixture-app",
+  "extensions": {
+    "@putnami/typescript": "0.5.0-20261113151743-0b411768",
+    "@putnami/sdd": "0.5.0-20261113113641-8622331b",
+    "@putnami/cloud": "0.4.1-20261117092701-9bde46ed"
+  },
+  "registries": {
+    "npm": {
+      "scopes": {
+        "@putnami": "https://npm.putnami.dev"
+      }
+    }
+  },
+  "includes": [
+    "libs/greeter"
+  ]
+}

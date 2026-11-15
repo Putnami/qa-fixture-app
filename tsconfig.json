@@ -1,0 +1,3 @@
+{
+  "extends": "./.putnami/bin/extensions/putnami-typescript/config/tsconfig.json"
+}

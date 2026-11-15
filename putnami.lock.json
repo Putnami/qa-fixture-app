@@ -1,0 +1,95 @@
+{
+  "version": 5,
+  "cli": {
+    "version": "0.5.0-20261113142726-9a5c7858",
+    "integrities": {
+      "darwin/amd64": "99ad91a84f5665450de7ab54c14c986e97b9edaa05233219a9bd75f8c0921ab8",
+      "darwin/arm64": "df2a291343ec14e884937794a70838aaadb5378ad0c76f5125664c3717bfd3d8",
+      "linux/amd64": "b377294d35bf563ddca4626a9c7e27a7cd8810fba6eb4c3fee955b838940e72c",
+      "linux/arm64": "24f8753dfea90cad4531caa944efb2fb2fff4fa6e831b4ac5e61b8fdd0f9e4ae",
+      "windows/amd64": "e4620eaad4eb3cf9503e0f2f9f3cfa02ae913c708bd2a24a1a5f9c74c33e4535"
+    },
+    "source": "https://put.putnami.dev/putnami/cli/download?arch=amd64&channel=0.5.0-20261113142726-9a5c7858&os=linux",
+    "protocolVersion": 2
+  },
+  "toolchains": {
+    "bun": {
+      "version": "1.4.0",
+      "archives": {
+        "darwin/amd64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-x64.zip",
+          "format": "zip",
+          "executable": "bun-darwin-x64/bun"
+        },
+        "darwin/arm64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-aarch64.zip",
+          "format": "zip",
+          "executable": "bun-darwin-aarch64/bun"
+        },
+        "linux/amd64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64.zip",
+          "format": "zip",
+          "executable": "bun-linux-x64/bun"
+        },
+        "linux/arm64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-aarch64.zip",
+          "format": "zip",
+          "executable": "bun-linux-aarch64/bun"
+        },
+        "windows/amd64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-x64.zip",
+          "format": "zip",
+          "executable": "bun-windows-x64/bun.exe"
+        },
+        "windows/arm64": {
+          "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-aarch64.zip",
+          "format": "zip",
+          "executable": "bun-windows-aarch64/bun.exe"
+        }
+      },
+      "integrities": {
+        "darwin/amd64": "1d0211b8f1dc991182344687ad15e72ee86f154845a5f7fa477994cd341dd9b0",
+        "darwin/arm64": "c669e97f6164e1c96e0701748db98dfa77492908cbd8394c7557134a735de381",
+        "linux/amd64": "2d03fb5fb83ac8b567aca0a281b2ce1a1a19d488f56c2968d88c3f25e92fe452",
+        "linux/arm64": "4b1a332ee861983eb93bcfe6f770fff94e3e31b2c388bdaea3c8ed35e58eed0e",
+        "windows/amd64": "e6f093d39da486b20262ca8cdd5ed6a9e8bc9c2f275b78e6d3a0c5b28cc95901",
+        "windows/arm64": "f473bfe2df73ee770548c93dd5d380aea7120c218ec2aa1afdd0bbba7bf18c47"
+      }
+    }
+  },
+  "extensions": {
+    "@putnami/cloud": {
+      "version": "0.4.1-20261117092701-9bde46ed",
+      "integrities": {
+        "linux/amd64": "5fc7cd7ae31e5e55dec74952a8edfd55f9cb957876052efe09271d7341acb2a8"
+      },
+      "manifestHash": "b44a34c337bedce25aed184779c9aa059e3683cd1cd1b26262e660df37584438",
+      "source": "https://put.putnami.dev/putnami/cloud/download?channel=0.4.1-20261117092701-9bde46ed"
+    },
+    "@putnami/dev": {
+      "version": "0.4.0",
+      "integrities": {
+        "linux/amd64": "4fbfb4af66fe84ebb0e2f48a4f97bda1ca7d31905a9aaa7ee0c4a86de689527a"
+      },
+      "manifestHash": "dd87ac3eb643eb2c4e7a0a5f6e0eebffbc3fa0050259164081030e4a8809380f",
+      "source": "https://put.putnami.dev/putnami/dev/download?channel=0.4.0"
+    },
+    "@putnami/sdd": {
+      "version": "0.5.0-20261113113641-8622331b",
+      "integrities": {
+        "linux/amd64": "4973b5719170702c886cd924881465f49c77bc20a377a83176f8f65e5935096f"
+      },
+      "manifestHash": "e4901e01cd8796dd32d7d699e1b6310744727905415200bad092ae15fc3edd19",
+      "source": "https://put.putnami.dev/putnami/sdd/download?channel=0.5.0-20261113113641-8622331b"
+    },
+    "@putnami/typescript": {
+      "version": "0.5.0-20261113151743-0b411768",
+      "integrities": {
+        "linux/amd64": "b7f2e44fcbc64e3b275b80cbc5ae1bf4ccc412542b7c48afaad3cfb4ff778284"
+      },
+      "manifestHash": "8692da03bbfb0a23a44d55fcf1f304c2174cdd76228cef9876a55a2d66448c91",
+      "source": "https://put.putnami.dev/putnami/typescript/download?channel=0.5.0-20261113151743-0b411768"
+    }
+  },
+  "templates": {}
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://putnami.dev/schemas/putnami-ci.json",
+  "version": 3,
+  "commands": ["lint", "test", "build", "validate", "validate-workspace"],
+  "flags": ["--fix=false", "--continue-on-error"],
+  "runner": {
+    "selection": "impacted",
+    "timeoutMinutes": 15
+  }
+}
