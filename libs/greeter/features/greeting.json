@@ -15,6 +15,12 @@
         "stage": "coded",
         "evidenceKinds": ["attestation"],
         "verification": { "kind": "acceptance", "checks": ["greeter-greeting"] }
+      },
+      {
+        "id": "capitalizes-the-name",
+        "stage": "coded",
+        "evidenceKinds": ["attestation"],
+        "verification": { "kind": "acceptance", "checks": ["greeter-greeting"] }
       }
     ]
   }
