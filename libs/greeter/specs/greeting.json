@@ -8,6 +8,7 @@
     {
       "id": "greets-by-name",
       "text": "The greeting names the person, and a blank name gives a greeting that names nobody."
-    }
+    },
+    { "id": "capitalizes-the-name", "text": "The greeting writes the first letter of the name in capitals." }
   ]
 }
