@@ -17,3 +17,9 @@ branch back to the template: a commit made here by hand is replaced.
 | `qa/draft` | documents how to run the tests | a draft: no run |
 
 Run the gate locally with `putnami lint,test,build,validate --all`.
+
+## Run the tests
+
+`putnami test --all` runs the greeter's tests. `putnami lint --all` checks
+the formatting, and `putnami validate --all` checks the feature declarations
+against the tests that prove them.
